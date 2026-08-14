@@ -20,7 +20,9 @@ def criar_matriz(n_linhas,n_colunas):
 #funnção imprimir e percorrer os elementos da matriz
 def imprimir_matriz(matriz): # recebe a matriz como parametro
     print('Matriz:') #imprime a palavra matriz
-    for linha in matriz:
+    for linhas in matriz: #percorre cada linha da matriz
+        print(linhas) #imprime a linha da matriz
+
 #main 
-matriz = criar_matriz(3, 3)
-imprimir_matriz(matriz) #chama a função imprimir_matriz passando a matriz como parametro
+matriz = criar_matriz(3, 3) # chama a função criar_matriz e atribui o resultado à variável matriz
+imprimir_matriz(matriz) # chama a função imprimir_matriz passando a matriz como parametro
