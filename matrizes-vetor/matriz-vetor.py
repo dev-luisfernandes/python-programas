@@ -16,3 +16,11 @@ def criar_matriz(n_linhas,n_colunas):
             linha.append(n) #adiciona o numero digitado na lista linha
         matriz.append(linha) #adiciona a lista linha na lista matriz
     return matriz # retorna a matriz
+
+#funnção imprimir e percorrer os elementos da matriz
+def imprimir_matriz(matriz): # recebe a matriz como parametro
+    print('Matriz:') #imprime a palavra matriz
+    for linha in matriz:
+#main 
+matriz = criar_matriz(3, 3)
+imprimir_matriz(matriz) #chama a função imprimir_matriz passando a matriz como parametro
