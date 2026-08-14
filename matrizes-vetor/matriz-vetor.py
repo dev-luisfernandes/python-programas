@@ -8,4 +8,6 @@
 
 #função criar e retornar matriz
 def criar_matriz(n_linhas,n_colunas):
-    matriz = []
+    matriz = [] #lista vazia
+    for i in range(n_linhas): #para i no alcance de lista numero de linhas
+        linha = []
