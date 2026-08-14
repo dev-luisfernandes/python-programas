@@ -10,4 +10,9 @@
 def criar_matriz(n_linhas,n_colunas):
     matriz = [] #lista vazia
     for i in range(n_linhas): #para i no alcance de lista numero de linhas
-        linha = []
+        linha = [] #lista vazia
+        for j in range(n_colunas): #for j no alcance de lista numero de colunas
+            n = int(input('numero:')) # n recebe o numero digitado pelo usuario
+            linha.append(n) #adiciona o numero digitado na lista linha
+        matriz.append(linha) #adiciona a lista linha na lista matriz
+    return matriz # retorna a matriz
