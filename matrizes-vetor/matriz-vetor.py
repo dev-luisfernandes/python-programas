@@ -23,6 +23,13 @@ def imprimir_matriz(matriz): # recebe a matriz como parametro
     for linhas in matriz: #percorre cada linha da matriz
         print(linhas) #imprime a linha da matriz
 
+# função para percorrer e imprimir os elementos 1 por 1 da matriz
+def imprimir_elementos(matriz):
+    for i in range(len(matriz)): #percorre o numero de linhas da matriz
+        for j in range(len(matriz[i])): #percorre o numero de colunas da matriz
+            print(matriz[i][j]) #imprime o elemento da matriz na posição i,j
+
 #main 
 matriz = criar_matriz(3, 3) # chama a função criar_matriz e atribui o resultado à variável matriz
 imprimir_matriz(matriz) # chama a função imprimir_matriz passando a matriz como parametro
+imprimir_elementos(matriz) # chama a função imprimir_elementos passando a matriz como parametro
